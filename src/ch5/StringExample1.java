@@ -2,7 +2,10 @@ package ch5;
 
 import java.util.Arrays;
 
-// 2024.10.30.Wed. 15:25~17:20 String은 "데이터 표현"할 때 사용하므로 중요하다.
+/*
+ * String 클래스
+ * - String은 "데이터 표현"할 때 사용하므로 중요하다.
+ */
 public class StringExample1 {
 	
 	public static void main(String[] args) {
@@ -62,7 +65,7 @@ public class StringExample1 {
 		System.out.println(str2.substring(8));	// orld! 123456789	
 		System.out.println(str2.substring(9));	// rld! 123456789
 		System.out.println(str2.substring(10));	// ld! 123456789 
-		//		substring(시작 인덱스, 끝 인덱스): 해당 인덱스 범위에 있는 글자를 잘라준다.
+//		substring(시작 인덱스, 끝 인덱스): 해당 인덱스 범위에 있는 글자를 잘라준다.
 		System.out.println(str2.substring(worldIndex, 12));	// world // 7~11번까지 출력
 		
 		
