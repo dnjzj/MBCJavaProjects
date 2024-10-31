@@ -2,8 +2,10 @@ package ch3;
 
 import java.util.Scanner;
 
-// Quiz3 풀이 코드
-// OperatorQuiz에 Scanner를 이용해서 입력값 받아 처리하는 프로그램 작성
+/*
+ * Quiz3. OperatorQuiz에 Scanner를 이용해서 입력값 받아 처리하는 프로그램 작성
+ * 풀이
+ */
 public class OperationQuiz2 {
 	public static void main(String[] args) {
 		// Scanner 객체는 사용자의 입력값을 받는 객체

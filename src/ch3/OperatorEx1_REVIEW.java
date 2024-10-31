@@ -1,6 +1,9 @@
 package ch3;
 
-// 2024.10.28.월 : 비트 연산자 및 이진수, 음수표현(2의 보수) 등 복습
+/*
+ * 복습
+ * - 비트 연산자 및 이진수, 음수표현(2의 보수) 등 복습
+ */
 public class OperatorEx1_REVIEW {
 	public static void main(String[] args) {
 //		//*********** 부호 연산자 ***********

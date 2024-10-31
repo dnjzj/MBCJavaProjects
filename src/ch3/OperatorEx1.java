@@ -1,5 +1,13 @@
 package ch3;
 
+/*
+ * 연산자
+ * - 부호 연산자
+ * - 증감 연산자: 전치, 후치 연산자
+ * - ...
+ * 
+ * *****************************
+ */
 public class OperatorEx1 {
 	public static void main(String[] args) {
 		int a = 10;
@@ -14,7 +22,7 @@ public class OperatorEx1 {
 		System.out.println("++ 후치 처리 결과: " + (a++));
 		System.out.println("-- 후치 처리 결과: " + (a--));
 		System.out.println(a);
-		/**
+		/*
 			[결과]		
 			++ 전치 처리 결과: 11
 			-- 전치 처리 결과: 10
@@ -44,8 +52,10 @@ public class OperatorEx1 {
 		byte under = (byte)(-128 - 1);
 		System.out.println("언더플로우 결과: " + under);		// 127
 		
-		// 3.4. 정확한 계산을 위한 정수 연산(87p)
-		// 정확한 계산은 정수 연산을 통해서 작업한다. 따라서 산술 연산을 정확하게 계산하기 위해서는 실수 타입으로 계산하지 않는 게 좋다.
+		/*****************************
+		 * Ch3.4. 정확한 계산을 위한 정수 연산(87p)
+		 * - 정확한 계산은 정수 연산을 통해서 작업한다. 따라서 산술 연산을 정확하게 계산하기 위해서는 실수 타입으로 계산하지 않는 게 좋다.
+		 */
 		int apple = 1;
 		double pieceUnit = 0.1;
 		int number = 7;
@@ -62,7 +72,9 @@ public class OperatorEx1 {
 		double result4 = (apple * 10 - number * (int)(pieceUnit * 10)) / 10.0;
 		System.out.println("(...): " + result4);// 0.3
 		
-		// 3.5. 나눗셈 연산 후 NaN(Not a Number)과 Infinity(무한대) (88p)
+		/*****************************
+		 * Ch3.5. 나눗셈 연산 후 NaN(Not a Number)과 Infinity(무한대) (88p)
+		 */
 		// ArithmeticException 발생
 		System.out.println(Double.isInfinite(5/0.0));	// 무한대 여부
 		System.out.println(Double.isNaN(5%0.0));		// NaN 여부
