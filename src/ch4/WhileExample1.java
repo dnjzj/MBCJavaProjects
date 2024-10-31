@@ -61,12 +61,7 @@ public class WhileExample1 {
 			System.out.println("i가 0이어도 일단 한 번은 실행합니다.");
 		} while( i != 0 );
 		
-		
-
-	
-	
-	
-	
+		scanner.close();
 	
 	}
 }
