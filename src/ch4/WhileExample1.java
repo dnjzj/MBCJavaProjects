@@ -2,6 +2,27 @@ package ch4;
 
 import java.util.Scanner;
 
+/*
+ * 반복문
+ * - while
+ * - do-while
+ * 
+ * while문?
+ * - for문 보다 더 자유도가 높은 반복문
+ * - for문은 초기화값, 조건(condition), 증가값 기술하는 형식을 사용하고
+ * - while은 문법상 조건(condition)만 사용한다.
+ * 
+ *  
+ * while(condition) {
+ * 		조건식이 참인 경우 실행할 코드(반복 실행할 코드)
+ * }
+ * 
+ * 
+ * do-while?
+ * - while 반복을 하는데 먼저 한번 실행하고 조건을 보는 반복문
+ * - 잘 사용하지 않는다.
+ * 
+ */
 public class WhileExample1 {
 	public static void main(String[] args) {
 		

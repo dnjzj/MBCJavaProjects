@@ -1,15 +1,21 @@
 package ch4;
 
+/*
+ * 반복문
+ * - for
+ * 
+ * 
+ * for문? 같은 코드를 여러 번 반복하고 싶은 때 사용한다.
+ * 
+ *  
+ * for(초기값; 조건식(condition); 증감식) {
+ * 		조건식이 참인 경우 실행할 코드(반복 실행할 코드)
+ * }
+ * 
+ */
 public class ForExample1 {
 
 	public static void main(String[] args) {
-		// for문은 같은 코드를 여러 번 반복하고 싶은 때 사용
-		/* 
-		 * for(초기값; 조건식(condition); 증감식) {
-		 * 		조건식이 참인 경우 실행할 코드(반복 실행할 코드)
-		 * }
-		 */
-		
 		// for문 기본 형식
 		for(int i = 0; i < 10; i++) {
 			System.out.println("i의 값: " + i);
@@ -22,8 +28,9 @@ public class ForExample1 {
 		}
 		
 		
-		
-		// 예제1. for문을 사용하여 1부터 100까지 숫자의 합 구하기
+		/*****************************
+		 * 예제1. for문을 사용하여 1부터 100까지 숫자의 합 구하기
+		 */
 		int sum = 0;
 		for(int k = 1; k <= 100; k++) {
 			sum += k;
@@ -31,15 +38,17 @@ public class ForExample1 {
 		System.out.println("1부터 100까지 합: " + sum);// 5050
 	
 		
-		
-		// 예제2. for문을 사용하여 1부터 100까지 홀수의 합을 구하는 프로그램을 작성하세요(17:30~17:45)
+		/*****************************
+		 * 예제2. for문을 사용하여 1부터 100까지 홀수의 합을 구하는 프로그램을 작성하세요
+		 * 		(17:30~17:45)
+		 */
 		int oddSum = 0;
 		for(int k = 1; k <= 100; k++) {
 			if (k % 2 == 1) oddSum += k;
 		}
 		System.out.println("1부터 100까지 홀수의 합: " + oddSum);		// 2500
 		
-		/********
+		/** --------------------------------
 		int oddSum = 0;
 		int evenSum = 0;
 		StringBuilder checkString1 = new StringBuilder();
@@ -59,11 +68,14 @@ public class ForExample1 {
 		System.err.println(checkString1.toString());
 		// 2 + 4 + 6 + 8 + 10 + 12 + 14 + 16 + 18 + 20 + 22 + 24 + 26 + 28 + 30 + 32 + 34 + 36 + 38 + 40 + 42 + 44 + 46 + 48 + 50 + 52 + 54 + 56 + 58 + 60 + 62 + 64 + 66 + 68 + 70 + 72 + 74 + 76 + 78 + 80 + 82 + 84 + 86 + 88 + 90 + 92 + 94 + 96 + 98 + 100 + 
 		System.err.println(checkString2.toString());
-		********/
+		-------------------------------- */
 		
 		
-		
-		// 문제 1. 100부터 1까지 순서대로 화면에 출력해주세요. 옆으로 출력해주세요. (17:45~18:00)
+		/*****************************
+		 * 문제1. 100부터 1까지 순서대로 화면에 출력해주세요. 옆으로 출력해주세요. 
+		 * 		(17:45~18:00)
+		 */
+		// 제출)
 		String resultString = "";
 		for(int k = 100; k > 0; k--) {
 			resultString += k + " ";
@@ -71,6 +83,7 @@ public class ForExample1 {
 		System.out.print(resultString);
 		System.out.println();
 		
+		// 정답)
 		for(int k = 100; k > 0; k--) {
 			System.out.print(k + " ");
 		}
